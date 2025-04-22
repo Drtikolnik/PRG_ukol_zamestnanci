@@ -47,6 +47,8 @@ public class ZamestnaneckySystemApp {
         int pocetNalezenychChybT = sc.nextInt();
         sc.nextLine();
 
+        Tester tester = new Tester(jmenoM, prijmeniM, poziceM, platM, pocetNalezenychChybT);
+
 
 
 
