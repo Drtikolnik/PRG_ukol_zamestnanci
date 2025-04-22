@@ -26,7 +26,7 @@ public class ZamestnaneckySystemApp {
     int pocetRizenychZamestnancuM = sc.nextInt();
     sc.nextLine();
 
-    Manager = new Manager(jmenoM, prijmeniM, poziceM, platM, pocetRizenychZamestnancuM)
+    Manager manager = new Manager(jmenoM, prijmeniM, poziceM, platM, pocetRizenychZamestnancuM);
 
 
     //TESTER----------------------------------
