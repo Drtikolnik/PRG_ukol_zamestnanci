@@ -1,3 +1,7 @@
+import firmapozice.Manager;
+import firmapozice.Tester;
+import firmapozice.Vyvojar;
+
 import java.util.Scanner;
 
 public class ZamestnaneckySystemApp {
@@ -22,8 +26,10 @@ public class ZamestnaneckySystemApp {
     int pocetRizenychZamestnancuM = sc.nextInt();
     sc.nextLine();
 
+    Manager = new Manager(jmenoM, prijmeniM, poziceM, platM, pocetRizenychZamestnancuM)
 
-    ;//MANAGER----------------------------------
+
+    //TESTER----------------------------------
         System.out.println("Jméno Testera:");
         String jmenoT = sc.nextLine();
 
