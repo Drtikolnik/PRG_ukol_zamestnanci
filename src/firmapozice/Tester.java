@@ -22,4 +22,10 @@ public class Tester extends Zamestnanec{
         System.out.println("Počet nalezených chyb: " + pocetNalezenychChyb);
     }
 
+    public int getPocetNalezenychChyb() {
+        return pocetNalezenychChyb;
+    }
+
 }
+
+
