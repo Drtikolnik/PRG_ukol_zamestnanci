@@ -134,14 +134,14 @@ public class ZamestnaneckySystemApp {
 //VÝPIS TESTERA, KTERÝ NALEZL NEJVÍCE CHYB
 
         Tester nejviceChyb = null;
-        for (Tester nejChyb : testeri) {
-                Tester tester = (Tester) nejChyb;
-                if (nejviceChyb == null || tester.getPocetNalezenychChyb() < ((Tester) nejviceChyb).getPocetNalezenychChyb()) {
-                    nejviceChyb = nejChyb;
-                }
+        for (Tester tester : testeri) {
+            if (nejviceChyb == null || tester.getPocetNalezenychChyb() > nejviceChyb.getPocetNalezenychChyb()) {
+                nejviceChyb = tester;
+            }
         }
+
         if (nejviceChyb != null) {
-            System.out.println("Tester s nejvěčím počtem nalezených chyb: " +nejviceChyb.getJmeno()+ " " +nejviceChyb.getPrijmeni());
+            System.out.println("Tester s největším počtem nalezených chyb: " +nejviceChyb.getJmeno()+ " " +nejviceChyb.getPrijmeni());
         }else{
             System.out.println("Žádný tester ve společnosti není");
         }
